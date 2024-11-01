@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Rendez-Vous</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center">Ajouter un Rendez-Vous</h1>
+    <form method="POST" action="/rendezvous">
+        <div class="mb-3">
+            <label for="title" class="form-label">Titre</label>
+            <input type="text" class="form-control" id="title" name="title" required>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea class="form-control" id="description" name="description" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="dateTime" class="form-label">Date et Heure</label>
+            <input type="datetime-local" class="form-control" id="dateTime" name="dateTime" required>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Ajouter</button>
+        </div>
+    </form>
+
+</div>
+</body>
+</html>
